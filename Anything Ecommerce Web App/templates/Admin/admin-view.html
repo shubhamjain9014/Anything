@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../static/Home/Home.css" />
+    <link rel="stylesheet" href="../../static/Admin/admin.css" />
+</head>
+<body>
+    {% include "flash.html" %}
+    {% include "Components/admin-navbar.html" %}
+    {% if cat=="products" %}
+    <h5 class="modHeading">All {{cat}}</h5>
+    {% for item in data %}
+    <hr class="adminHR" />
+    <div id="modProducts">
+        <div id="productItem">
+            <div id="productPhoto">
+                <img id="productImg" src="{{item[5]}}" alt="image 1">
+            </div>
+            <div id="productName">
+                <div id="productData">
+                    <p style="width:25rem;overflow-wrap: break-word;margin:0.2rem;"><strong>Product ID: </strong>{{item[0]}}</p>
+                    <p style="width:25rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin:0.2rem;"><strong>Product Name: </strong>{{item[1]}}</p>
+                    <p style="width:25rem;overflow-wrap: break-word;margin:0.2rem;"><strong>Category: </strong>{{item[2]}}</p>
+                    <p style="width:25rem;overflow-wrap: break-word;margin:0.2rem;"><strong>Price: </strong>&#8377;{{item[4]}}</p>
+                    <p style="width:25rem;overflow-wrap: break-word;margin:0.2rem;"><strong>Total Product Quantity: </strong>{{item[6]}}</p>
+                </div>
+            </div>
+            <div id="productQn">
+                <div id="productDesc">
+                    <p style="width:30rem;overflow-wrap: break-word;margin:0.2rem;"><strong>Description: </strong>{{item[3]}}</p>
+                </div>
+            </div>
+            <div id="productButton">
+                <form action="/add" method="post">
+                    <button class="deleteBtn" name="edit" value="modify"><img style="height:1rem;" src="../../static/images/edit.png" /></button>
+                    <input type="hidden" name="item" value="{{item[0]}}">
+                </form>    
+                <form action="/admin" method="post">
+                    <button class="deleteBtn" name="edit" value="remove"><img style="height:1rem;" src="../../static/images/delete.png" /></button>
+                    <input type="hidden" name="pid" value="{{item[0]}}">
+                </form>
+            </div>
+        </div>
+    </div>
+    {%endfor%}
+    <form action="/add" method="post">
+    <div style="text-align: center;">
+    <button id="delete" name="edit" value="add">Add Product</button>
+    <input type="hidden" name="cate" value="{{cat}}">
+</form>
+</div>
+    {% elif cat=="customer" %}
+    <h5 class="modHeading">All {{cat}}</h5>
+    {% for item in data %}
+    <div id="modCustomers">
+        <div id="customerItem">
+            <div id="customerData">
+                <div id="cD">
+                    <p style="width:25rem;overflow-wrap: break-word;margin:0.2rem;"><strong>Customer ID: </strong>{{item[0]}}</p>
+                    <p style="width:25rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin:0.2rem;"><strong>Customer Name: </strong>{{item[1]}}</p>
+                    <p style="width:25rem;overflow-wrap: break-word;margin:0.2rem;"><strong>Email: </strong>{{item[2]}}</p>
+                    <p style="width:25rem;overflow-wrap: break-word;margin:0.2rem;"><strong>Mobile No.:</strong>{{item[3]}}</p>
+                    <p style="width:25rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin:0.2rem;"><strong>Address: </strong>{{item[4]}}</p>
+                </div>
+            </div>
+            <div id="cS">
+                <div id="productDesc">
+                    <p style="width:30rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin:0.2rem;"><strong>Total Items Purchased: </strong>23</p>
+                    <p style="width:30rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin:0.2rem;"><strong>Total Amount: </strong>159000</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {%endfor%}
+</form>
+</div>
+{% elif cat=="orders" %}
+    <h5 class="modHeading">All {{cat}}</h5>
+    {% for item in data %}
+        <div class="orderItem">
+            <div class="orderDetails">
+                <p style="margin-top:0.5rem;margin-bottom:0;"><strong>Order ID: </strong>{{item[0]}}</p>
+                <p style="margin-top:0.5rem;margin-bottom:0;"><strong>Payment ID: </strong>{{item[1]}}</p>
+                <p style="margin-top:0.5rem;margin-bottom:0;"><strong>Order Date: </strong>{{item[2]}}</p>
+                <p style="margin-top:0.5rem;margin-bottom:0;"><strong>Status: </strong>{{item[13]}}</p>
+                <p style="margin-top:0.5rem;margin-bottom:0;"><strong>Delivery Date: </strong>{{item[14]}}</p>
+                <form action="/add" method="post">
+                    <button id="deleteBtn" name="edit" value="change-ord"><img style="height:1rem;margin-top:0.8rem;" src="../../static/images/edit.png"></button>
+                    <input type="hidden" name="Order_id" value="{{item[0]}}">
+                    <input type="hidden" name="pr_id" value="{{item[3]}}">
+                </form>
+            </div>
+            <hr class="ordersHR"/>
+            <div class="orderData">
+                <div class="productDetails">
+                    <p style="margin-bottom:0.2rem;width:47rem;"><strong>Product ID: </strong>{{item[3]}}</p>
+                    <p style="margin-bottom:0.2rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:47rem;"><strong>Product Name: </strong>{{item[4]}}</p>
+                    <p style="margin-bottom:0.2rem;width:47rem;"><strong>Product Category: </strong>{{item[5]}}</p>
+                    <p style="margin-bottom:0.2rem;width:47rem;"><strong>Product Price: </strong>{{item[6]}}</p>
+                    <p style="margin-bottom:0.2rem;width:47rem;"><strong>Product Quantity: </strong>{{item[7]}}</p>
+                </div>
+                <div class="customerDetails">
+                    <p style="margin-bottom:0.2rem;width:31rem;"><strong>Customer ID: </strong>{{item[8]}}</p>
+                    <p style="margin-bottom:0.2rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:31rem;"><strong>Customer Name: </strong>{{item[9]}}</p>
+                    <p style="margin-bottom:0.2rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:31rem;"><strong>Customer Email: </strong>{{item[10]}}</p>
+                    <p style="margin-bottom:0.2rem;width:31rem;"><strong>Customer Mob No.: </strong>{{item[11]}}</p>
+                    <p style="margin-bottom:0.2rem;overflow-wrap:break-word;width:31rem;"><strong>Customer Address: </strong>{{item[12]}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {%endfor%}
+</div>
+    {%endif%}
+      <!--bootstrap Js Essential-->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+</body>
+</html>

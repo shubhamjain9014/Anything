@@ -1,0 +1,266 @@
+/* Put it inside Admin folder inside static folder */
+.adminHR{
+    width:80%;
+    margin-top:0.5rem;
+}
+
+.modHeading{
+    text-align:center;
+    margin:1.5rem auto 1rem auto;
+}
+
+#productName{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+#productQn{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+#cartBody{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+#productItem{
+    display:grid;
+    grid-template-columns: 2fr 3fr 4fr 1fr;
+    margin:1rem auto;
+    width:80rem;
+    border-radius:0.4rem;
+    text-overflow:ellipsis;
+    -webkit-box-shadow: 0 0 10px gray;
+    box-shadow: 0 0 10px gray;
+}
+
+#customerItem{
+    display:grid;
+    grid-template-columns:6fr 4fr;
+    margin:1rem auto;
+    width:80rem;
+    border-radius:0.4rem;
+    text-overflow:ellipsis;
+    -webkit-box-shadow: 0 0 10px gray;
+    box-shadow: 0 0 10px gray;
+    padding-left:1rem;
+    padding-right:1rem;
+}
+
+#productImg{
+    border-top-left-radius:0.4rem;
+    border-bottom-left-radius:0.4rem;
+}
+
+#customerData{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+#customerStats{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+#deleteBtn{
+    background-color:white;
+    border:none;
+    margin:0.3rem 0.3rem 0 0;
+}
+
+#deleteBtn:hover{
+    cursor:pointer;
+    outline:none;
+}
+
+#productButton{
+    text-align:right;
+}
+
+#productsHeading{
+    text-align:center;
+    margin:1.5rem auto 0.4rem auto;
+}
+
+#headingHR{
+    margin:0.2rem auto;
+    color:gray;
+    width:80%;
+}
+
+#paymentBtn{
+    background-color:#007FFF;
+    border:none;
+    border-radius:0.2rem;   
+}
+
+.backBtn{
+    margin-bottom:5rem;
+}
+
+
+/* Put it inside Admin folder inside static folder */
+.adminHR{
+    width:80%;
+    margin-top:0.5rem;
+}
+
+.productHeading{
+    display:grid;
+    grid-template-columns:8fr 2fr;
+    width:80rem;
+    margin:0 auto;
+}
+.modHeading{
+    text-align:center;
+}
+
+.addProductBtn{
+    background-color:#007FFF;
+    border:none;
+    border-radius:0.2rem;
+    color:white;
+    height:2rem;
+    width:6.5rem;
+}
+#delete{
+    border: none;
+    border-radius: 0.4rem;
+    color: aliceblue;
+    background-color:#007FFF;
+    margin: 2rem;
+    outline: none;
+}
+.cartBody{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.productItem{
+    display:grid;
+    grid-template-columns: 2fr 3fr 4fr 1fr;
+    margin:1rem auto;
+    width:80rem;
+    border-radius:0.4rem;
+    text-overflow:ellipsis;
+    -webkit-box-shadow: 0 0 10px gray;
+    box-shadow: 0 0 10px gray;
+}
+
+.productName{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.productQn{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.customerItem{
+    display:grid;
+    grid-template-columns:6fr 4fr;
+    margin:1rem auto;
+    width:80rem;
+    border-radius:0.4rem;
+    text-overflow:ellipsis;
+    -webkit-box-shadow: 0 0 10px gray;
+    box-shadow: 0 0 10px gray;
+    padding:0.5rem 1rem;
+}
+
+.productImg{
+    border-top-left-radius:0.4rem;
+    border-bottom-left-radius:0.4rem;
+}
+
+.customerData{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.customerStats{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.deleteBtn{
+    background-color:white;
+    border:none;
+    margin:0.3rem 0.3rem 0 0;
+    display:inline;
+}
+
+.deleteBtn:hover{
+    cursor:pointer;
+    outline:none;
+}
+
+#productButton{
+    text-align:right;
+    display: flex;
+    justify-content: right;
+}
+
+.productsHeading{
+    text-align:center;
+    margin:1.5rem auto 0.4rem auto;
+}
+
+.headingHR{
+    margin:0.2rem auto;
+    color:gray;
+    width:80%;
+}
+
+.paymentBtn{
+    background-color:#007FFF;
+    border:none;
+    border-radius:0.2rem;   
+}
+
+.backBtn{
+    margin-bottom:5rem;
+}
+
+.orderItem{
+    width:80rem;
+    margin:1rem auto;
+    border-radius:0.4rem;
+    text-overflow:ellipsis;
+    -webkit-box-shadow: 0 0 10px gray;
+    box-shadow: 0 0 10px gray;
+    padding:0 1rem 0.3rem 1rem;
+}
+
+.orderDetails{
+    display:flex;
+    justify-content:space-between;
+    padding-left:4rem;
+}
+
+.orderData{
+    display:grid;
+    grid-template-columns:6fr 4fr;
+}
+
+.ordersHR{
+    width:95%;
+    height:1px;
+    border:0;
+    border-top:1px solid #89CFF0;
+    margin:0.5rem auto;
+    padding:0;
+}
+

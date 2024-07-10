@@ -1,0 +1,43 @@
+<div id="navbarContainer">
+    <div id="firstNav">
+        <a href="{{url_for('admin')}}"><img id="logoImg" src="../../static/Home/assets/logo.png" /></a>
+        <div class="dropdown">
+            <form action="\admin" method="post">
+            <button id="allCategories" style="margin-left:1rem;" name="category" value="products">
+                Products
+            </button>
+        </form>
+        </div>
+        <div class="dropdown">
+            <form action="\admin" method="post">
+            <button id="allCategories" name="category" value="Customer">
+                Customers
+            </button>
+        </form>
+        </div>
+        <div class="dropdown">
+            <form action="\admin" method="post">
+            <button id="allCategories" name="category" value="Orders">
+                Orders
+            </button>
+        </form>
+        </div>
+    </div>
+    <div id="secondNav">
+        <div class="dropdown">
+            <button id="profileBtn" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img id="profileImg" src="../../static/Home/assets/profile.png" />
+            </button>
+            <div id="profile-dropdown">
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    {% if session["name"] %}
+                    <form action="/" method="post">
+                        <button class="dropdown-item" name="logout" value="logout">Logout</button>
+                    </form>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,127 @@
+#navbarContainer{
+    display:flex;
+    height:4rem;
+    background-color: #89CFF0; 
+    justify-content:space-between;
+}
+
+#logoImg{
+    margin-top:0.5rem;
+    height:3rem;
+}
+
+#allCategories{
+    height:2.5rem;
+    background-color:#007FFF;
+    border:none;
+    color:white;
+    margin:0.6rem 1rem 0.5rem 1rem;
+    border-radius:0.4rem;
+}
+
+#allCategories:hover{
+    cursor:pointer;
+}
+
+#searchBtn{
+    background-color:#89CFF0;
+    border:none;
+    padding:0;
+    display:inline;   
+}
+
+#searchForm{
+    display:flex;
+}
+
+#searchBar{
+    height:2.8rem;
+    width:30rem;
+    margin:0.5rem;
+    margin-left:3rem;
+}
+
+#searchImg{
+    height:3rem;
+    margin-top:0;
+}
+
+#cartImg{
+    height:3rem;
+    margin:0.5rem;
+}
+
+#cartImg:hover{
+    cursor:pointer;
+}
+
+#profileImg{
+    height:3rem;
+    margin:0.5rem;
+}
+
+#profileImg:hover{
+    cursor:pointer;
+}
+
+#firstNav{
+    display:flex;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(calc(100% / 5 - 15px), 1fr)); /* Adjust the number of cards per row here */
+    gap: 30px;
+    margin: auto;
+    padding: 2rem 5rem;
+}
+#abc {
+    position:absolute;
+    padding-left: 4rem;
+    bottom:1rem;
+}
+
+.card-body{
+    height:20rem;
+}
+
+.prodImg{
+    height:15rem;
+}
+
+.productsHeading{
+    text-align:center;
+    margin:1.5rem auto 0.4rem auto;
+}
+
+.headingHR{
+    margin:0.2rem auto;
+    color:gray;
+    width:80%;
+}
+
+#footer-container{
+    background-color:lightgray;
+    padding:1rem 0;
+}
+
+#footer1{
+    display:flex;
+    justify-content:center;
+    gap:25rem;
+}
+
+#footer-container a{
+    margin:0;
+    color:black;
+}
+
+#footer-container hr{
+    color:white;
+    margin:0.8rem;
+    font-weight:bold;
+}
+
+#footer-payment{
+    text-align:center;
+}

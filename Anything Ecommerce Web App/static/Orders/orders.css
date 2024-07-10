@@ -1,0 +1,65 @@
+#ordersHR{
+    width:90%;
+    margin-top:0.5rem;
+}
+
+.ordersContainer{
+    margin:1rem 0 2rem 0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.parOrder{
+    width:60rem;
+    margin-top:1rem;
+}
+
+.itemsContainer{
+    box-shadow: 5px 5px 5px 8px lightgray;
+}
+
+.datetime{
+    display:inline;
+    text-align:left;
+    margin-left:0.2rem;
+}
+
+.orderid{
+    display:inline;
+    position:relative;
+    left:42rem;
+}
+
+.parOrderHR{
+    margin-top:0.5rem;
+    margin-bottom:0.5rem;
+}
+
+.items{
+    padding:0.5rem;
+    display:grid;
+    grid-template-columns:2fr 5fr 3fr;
+}
+
+.productImg{
+    height:7rem;
+    border-radius:0.4rem;
+}
+
+.pNContainer{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.pDContainer{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.itemsHR{
+    width:95%;
+    margin:0 auto;
+}

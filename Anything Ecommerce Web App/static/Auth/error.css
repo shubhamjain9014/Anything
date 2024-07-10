@@ -1,0 +1,28 @@
+/* Put it inside Home folder inside static folder */
+#error-logo{
+    display:flex;
+    justify-content:center;
+    margin-top:2.5rem;
+}
+
+#error-message h4{
+    text-align:center;
+}
+
+#error-message p{
+    text-align:center;
+}
+
+#goBackBtn{
+    display:flex;
+    justify-content:center;
+    margin-bottom:2.5rem;
+}
+
+#goBack{
+    background-color:#007FFF;
+    border:none;
+    outline:none;
+    border-radius:0.2rem;
+    color:white;
+}

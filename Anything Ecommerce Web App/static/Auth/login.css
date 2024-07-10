@@ -1,0 +1,51 @@
+body{
+    background-image:url('assets/login.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+.login-box{
+    height:10rem;
+    margin:3.5rem;
+    display:flex;
+    justify-content:center;
+}
+
+.login-label{
+    display:block;
+    font-weight:bold;
+    color:white;
+}
+
+.login-box input{
+    margin-bottom:1rem;
+    width:100%;
+    height:2rem;
+    border-radius:0.2rem;
+    border:2px solid #007FFF;
+}
+
+.login-box form{
+    width:29rem;
+}
+
+#submitBtn{
+    background-color:#007FFF;
+    border:none;
+    outline:none;
+    margin:0.5rem;
+    height:2rem;
+    width:4rem;
+    border-radius:0.2rem;
+}
+
+.centerDiv{
+    display:flex;
+    justify-content:center;
+}
+
+.login-box form h1{
+    text-align:center;
+    color:White;
+}

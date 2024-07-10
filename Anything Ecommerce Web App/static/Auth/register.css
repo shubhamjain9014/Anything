@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image:url(assets/register.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    font-family: 'Roboto', sans-serif;
+}
+.signup-box{
+    width: 360px;
+    height: 520px;
+    margin:1rem 4rem 2rem 4rem;
+    border-radius: 0.4rem;
+}
+
+.centerDiv{
+    display:flex;
+    justify-content:center;
+}
+
+.login-box{
+    width: 360px;
+    height: 280px;
+    margin: auto;
+    background-color: white;
+    border-radius: 3px;
+}
+textarea{
+    width:100%;
+    border:1px solid #ccc;
+    outline:none;
+    padding:10px;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    padding-top:15px;
+}
+
+form{
+    width: 29rem;
+    margin-left: 20px;
+}
+form label{
+    display: flex;
+    margin-top: 20px;
+    font-size:18px;
+}
+form input{
+    height:1.5rem;
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border: 1px solid gray;
+    border-radius:0.2rem;
+    outline:none;
+}
+input[type="button"]
+{
+    width:320px;
+    height: 35px;
+    margin-top: 20px;
+    border: none;
+    background-color:#007FFF;
+    color:white;
+    font-size:18px;
+}
+
+#submitBtn{
+    background-color:#007FFF;
+    border:none;
+    outline:none;
+    margin:0.5rem;
+    height:1.5rem;
+    width:4rem;
+    border-radius:0.2rem;
+    text-align:center;
+}
+
+p{
+    text-align: center;
+    padding-top: 20px;
+    font-size:15px;
+}
+.para-2{
+    text-align:center;
+    font-size:15px;
+    margin-top: -10px;
+}
+.para-2 a{
+    color:#007FFF;
+}
+
+.signup-box input{
+    border-color:#007FFF;
+}

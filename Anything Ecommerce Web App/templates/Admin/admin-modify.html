@@ -1,0 +1,120 @@
+<!--Put it inside Admin folder inside templates folder-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../static/Home/Home.css" />
+    <link rel="stylesheet" href="../../static/Admin/admin-modify.css" />
+  </head>
+  <body>
+    {% include "Components/admin-navbar.html" %}
+    <h3 style="text-align:center;">Admin Page</h3>
+    {% if cat=="edit" %}
+    <hr class="adminHR" />
+    <div class="modifyProductsContainer">
+        <div class="modifyProducts">
+            <div class="fieldNames">
+                <p class="productFN"><strong>Product ID: </strong></p>
+                <p class="productFN"><strong>Product Name: </strong></p>
+                <p class="productFN"><strong>Product Category: </strong></p>
+                <p class="productFN"><strong>Product Description: </strong></p>
+                <p class="productFN"><strong>Product Price: </strong></p>
+                <p class="productFN"><strong>Product Image: </strong></p>
+                <p class="productFN"><strong>Product Quantity: </strong></p>
+            </div>
+            <div class="inputFields">
+                <form action="/add" method="POST">
+                    <p><input class="productInput" style="margin-top:0.4rem;" type="text" placeholder="Enter Product ID" name="p_id" value="{{item[0]}}" /></p>
+                    <p><input class="productInput" type="text" placeholder="Enter Name" name="p_name" value="{{item[1]}}" /></p>
+                    <p><input class="productInput" type="text" placeholder="Enter Category" name="p_cat" value="{{item[2]}}" /></p>
+                    <p><input class="productInput" type="text" placeholder="Enter Description" name="p_desc" value="{{item[3]}}" /></p>
+                    <p><input class="productInput" type="text" placeholder="Enter Price" name="p_price" value="{{item[4]}}" /></p>
+                    <p><input class="productInput" type="text" placeholder="Enter Image Link" name="p_image" value="{{item[5]}}" /></p>
+                    <p><input class="productInput" type="text" placeholder="Enter Quantity" name="p_qn" value="{{item[6]}}" /></p>
+                    <button class="productSubmit" type="submit" name="submit" value="modify-btn">Modify Details</button>
+            </form>
+            </div>
+        </div>
+    </div>
+    {% elif cat=="add" %}
+    <hr class="adminHR" />
+    <div class="modifyProductsContainer">
+        <div class="modifyProducts">
+            <div class="fieldNames">
+                <p class="productFN"><strong>Product ID: </strong></p>
+                <p class="productFN"><strong>Product Name: </strong></p>
+                <p class="productFN"><strong>Product Category: </strong></p>
+                <p class="productFN"><strong>Product Description: </strong></p>
+                <p class="productFN"><strong>Product Price: </strong></p>
+                <p class="productFN"><strong>Product Image: </strong></p>
+                <p class="productFN"><strong>Product Quantity: </strong></p>
+            </div>
+            <div class="inputFields">
+                <form action="/add" method="post">
+                    <p><input class="productInput" style="margin-top:0.4rem;" type="text" placeholder="Enter Product ID" name="p_id"  /></p>
+                    <p><input class="productInput" type="text" placeholder="Enter Name" name="p_name"  /></p>
+                    <p><input class="productInput" type="text" placeholder="Enter Category" name="p_cat"  /></p>
+                    <p><input class="productInput" type="text" placeholder="Enter Description" name="p_desc"  /></p>
+                    <p><input class="productInput" type="text" placeholder="Enter Price" name="p_price"  /></p>
+                    <p><input class="productInput" type="text" placeholder="Enter Image Link" name="p_image"  /></p>
+                    <p><input class="productInput" type="text" placeholder="Enter Quantity" name="p_qn"  /></p>
+                    <button class="productSubmit" type="submit" name="submit" value="add-btn">Add Details</button>
+            </form>
+            </div>
+        </div>
+    </div>
+    {% else %}
+    <div class="modifyOrdersContainer">
+        <div class="modifyOrders">
+            <div class="fieldNames1">
+                <p class="productFN1"><strong>Order ID: </strong></p>
+                <p class="productFN1"><strong>Payment ID: </strong></p>
+                <p class="productFN1"><strong>Order Date: </strong></p>
+                <p class="productFN1"><strong>Product ID: </strong></p>
+                <p class="productFN1"><strong>Product Name: </strong></p>
+                <p class="productFN1"><strong>Product Category: </strong></p>
+                <p class="productFN1"><strong>Product Category: </strong></p>
+                <p class="productFN1"><strong>Product Quantity: </strong></p>
+                <p class="productFN1"><strong>Customer ID: </strong></p>
+                <p class="productFN1"><strong>Customer Name: </strong></p>
+                <p class="productFN1"><strong>Customer Email: </strong></p>
+                <p class="productFN1"><strong>Customer Mobile No.: </strong></p>
+                <p class="productFN1"><strong>Address: </strong></p>
+                <p class="productFN1"><strong>Order Status: </strong></p>
+                <p class="productFN1"><strong>Delivery Date: </strong></p>
+            </div>
+            <div class="inputFields1">
+                <form action="/add" method="post">
+                    <p><input class="productInput1" style="margin-top:0.4rem;" type="text" name="Order_id" value="{{item[0]}}" disabled/>
+                        <input class="productInput1" style="margin-top:0.4rem;" type="hidden" name="Order_id" value="{{item[0]}}"/></p>
+                    <p><input class="productInput1" type="text" value="{{item[1]}}" disabled/></p>
+                    <p><input class="productInput1" type="text" value="{{item[2]}}" disabled/></p>
+                    <p><input class="productInput1" type="text" name="pr_id" value="{{item[3]}}" disabled/>
+                        <input class="productInput1" type="hidden" name="pr_id" value="{{item[3]}}" /></p>
+                    <p><input class="productInput1" type="text" value="{{item[4]}}" disabled/></p>
+                    <p><input class="productInput1" type="text" value="{{item[5]}}" disabled/></p>
+                    <p><input class="productInput1" type="text" value="{{item[6]}}" disabled/></p>
+                    <p><input class="productInput1" type="text" value="{{item[7]}}" disabled/></p>
+                    <p><input class="productInput1" type="text" value="{{item[8]}}" disabled/></p>
+                    <p><input class="productInput1" type="text" value="{{item[9]}}" disabled/></p>
+                    <p><input class="productInput1" type="text" value="{{item[10]}}" disabled/></p>
+                    <p><input class="productInput1" type="text" value="{{item[11]}}" disabled/></p>
+                    <p><input class="productInput1" type="text" placeholder="Enter Customer Address" name="address" value="{{item[12]}}" /></p>
+                    <p><input class="productInput1" type="text" placeholder="Enter Order Status" name="orderstatus" value="{{item[13]}}" /></p>
+                    <p><input class="productInput1" type="text" placeholder="Enter Delivery Date" name="deliverydate" value="{{item[14]}}" /></p>
+                    <button class="productSubmit1" type="submit" name="submit" value="edit-add" >Add Details</button>
+            </form>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    {% include "Components/footer.html" %}
+      <!--bootstrap Js Essential-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

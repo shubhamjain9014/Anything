@@ -1,0 +1,50 @@
+<div id="navbarContainer">
+    <div id="firstNav">
+        <a href="{{url_for('home')}}"><img id="logoImg"
+                src="../../static/Home/assets/logo.png" /></a>
+        <div class="dropdown">
+            <button id="allCategories" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                &#8801; All Categories
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <form action="/product" method="post">
+                    <button class="dropdown-item" name="category" value="Electronics">Electronics</button>
+                    <button class="dropdown-item" name="category" value="Fashion">Fashion</button>
+                    <button class="dropdown-item" name="category" value="Furniture">Furniture</button>
+                </form>
+            </div>
+        </div>
+        <form action="/product" id="searchForm" method="post">
+            <input id="searchBar" class="form-control mr-sm-2" type="search" name="search"
+                placeholder="Search for products" aria-label="Search">
+            <button id="searchBtn" type="submit"><img id="searchImg"
+                    src="../../static/Home/assets/search-img.png" /></button>
+        </form>
+    </div>
+    <div id="secondNav">
+        <form action="/cart" method="post">
+        <button name="cart" value="cart" style="border: none; background-color: #D7DEE1;padding: 0;"><img id="cartImg" src="../../static/Home/assets/cart.png" /></button>
+        </form>
+        <div class="dropdown">
+            <button id="profileBtn" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img id="profileImg" src="../../static/Home/assets/profile.png" />
+            </button>
+            <div id="profile-dropdown">
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    {% if session["name"] %}
+                    <a class="dropdown-item signdd" href="{{url_for('profile')}}">My Profile</a>
+                    <a class="dropdown-item signdd" href="{{url_for('orders')}}">My Orders</a>
+                    <form action="/" method="post">
+                    <button class="dropdown-item" name="logout" value="logout">Logout</button>
+                    </form>
+                    {% else %}
+                    <a class="dropdown-item signdd" href="{{url_for('login')}}">sign in</a>
+                    <a class="dropdown-item signdd" href="{{url_for('register')}}">sign up</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

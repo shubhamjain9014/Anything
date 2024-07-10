@@ -1,0 +1,19 @@
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+{% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+    {% for category, message in messages %}
+    <p hidden id="message">{{message}}</p>
+    <p hidden id="category">{{category}}</p>
+    <script>
+        var message=document.getElementById("message").innerHTML
+        var category=document.getElementById("category").innerHTML
+        Swal.fire({
+            icon:category,
+            title: message,
+            showConfirmButton: false,
+            timer: 1500
+            });
+    </script>
+    {% endfor %}
+  {% endif %}
+{% endwith %}

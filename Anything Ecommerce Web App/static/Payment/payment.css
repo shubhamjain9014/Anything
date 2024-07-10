@@ -1,0 +1,126 @@
+.payment{
+    display:flex;
+    justify-content:center;
+}
+
+.paymentContainer{
+    display:grid;
+    grid-template-columns:5fr 5fr;
+    width:60rem;
+    margin-top:2rem;
+    margin-bottom:2rem;
+    border-radius:0.4rem;
+    -webkit-box-shadow: 0 0 10px gray;
+    box-shadow: 0 0 10px gray;
+}
+
+.prod{
+    display:flex;
+    justify-content:center;
+}
+
+.productSection{
+    display:flex;
+    justify-content:center;
+}
+
+.cardSection{
+    display:flex;
+    justify-content:center;
+}
+
+.productInfo{
+    display:flex;
+    justify-content:center;
+    margin-top:1.5rem;
+}
+.productItem{
+    width:20rem;
+    margin-top:0.4rem;
+    border-radius:0.2rem;
+    -webkit-box-shadow: 0 0 10px gray;
+    box-shadow: 0 0 10px gray;
+    padding:0.4rem;
+}
+
+.productData{
+    display:flex;
+    justify-content:space-between;
+}
+
+.productIframe{
+    width:22rem;
+    height:20rem;
+    border:1px solid lightgray;
+}
+
+.carouselContainer{
+    display:flex;
+    justify-content:center;
+    height:15rem;
+}
+
+.carouselImgContainer{
+    height:15rem;
+    width:15rem;
+}
+
+.carouselImg{
+    width:15rem;
+    height:15rem;
+    object-fit:cover;
+}
+
+#carouselCont{
+    height:20rem;
+    width:15rem;
+}
+.productDetails{
+    padding:1rem;
+}
+
+.paymentDetails{
+    width:22rem;
+    padding:1rem;
+}
+
+.cardDetailsLabel{
+    margin-top:0.4rem;
+    margin-bottom:0.2rem;
+}
+
+.cardDetailsInput{
+    width:20rem;
+    border-radius:0.2rem;
+    border:2px solid #89CFF0;
+}
+
+.cardDetailsInput:focus{
+    border:3px solid #007FFF;
+    outline:none;
+}
+
+.payButton{
+    display:flex;
+    justify-content:center;
+}
+
+.payBtn{
+    background-color:#007FFF;
+    border:none;
+    border-radius:0.2rem;
+    outline:none;
+    width:4rem;
+    height:1.8rem;
+    color:white;
+}
+
+.payBtn:hover{
+    cursor:pointer;
+}
+
+.cardLogo{
+    height:3rem;
+    margin-top:1rem;
+    margin-left:0.5rem;
+}

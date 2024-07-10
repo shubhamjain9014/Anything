@@ -1,0 +1,170 @@
+#navbarContainer{
+    display:flex;
+    height:4rem;
+    background-color: #D7DEE1; 
+    justify-content:space-between;
+    margin-bottom:0.5rem;
+    box-shadow: 0 4px 4px -2px gray; 
+}
+
+#logoImg{
+    margin-top:0.5rem;
+    height:3rem;
+}
+
+#allCategories{
+    height:2.5rem;
+    background-color:#676a6b;
+    border:none;
+    color:white;
+    margin:0.8rem 0.5rem 0.5rem 0.5rem;
+    border-radius:0.4rem;
+}
+
+#allCategories:hover{
+    cursor:pointer;
+}
+
+#searchBtn{
+    background-color:#D7DEE1;
+    border:none;
+    padding:0;
+    display:inline; 
+    outline:none;
+}
+
+#searchBtn:hover{
+    cursor:pointer;
+}
+
+#searchForm{
+    display:flex;
+}
+
+#searchBar{
+    height:2.8rem;
+    width:30rem;
+    margin:0.5rem;
+    margin-left:3rem;
+}
+
+#searchImg{
+    height:3rem;
+    margin-top:0.5rem;
+    cursor:pointer;
+}
+
+#cartImg{
+    height:3rem;
+    margin:0.5rem;
+}
+
+#cartImg:hover{
+    cursor:pointer;
+}
+
+#profileImg{
+    height:3rem;
+    margin:0.5rem;
+    background-color: #D7DEE1;
+}
+
+#profileImg:hover{
+    cursor:pointer;
+}
+
+#profileBtn{
+    padding:0;
+    margin:0;
+    background-color:#D7DEE1;
+    border:none;
+    outline:none;
+}
+
+#profileBtn:after{
+    content:none;
+}
+
+#profile-dropdown{
+    position:relative;
+    right:3.4rem;
+    bottom:4.2rem;
+}
+
+.signdd{
+    text-align: center;
+}
+
+#firstNav{
+    display:flex;
+}
+
+#secondNav{
+    display:flex;
+}
+
+#carouselCont{
+    height:25rem;
+}
+
+#newArrival{
+    display:flex;
+    justify-content:center;
+    gap:1rem;
+}
+.na{
+    height:20rem;
+    object-fit: cover;
+}
+.cardDesc{
+    text-align: center;
+    font-weight: bold;
+}
+#siteDesc{
+    display:flex;
+    justify-content:center;
+    gap:5rem;
+    margin-top: 10rem;
+}
+
+.siteCard{
+    border:none;
+}
+.sd{
+    object-fit: contain;
+    height: 5rem;
+    width: 5rem;
+    margin:0 auto;
+}
+
+#footer-container{
+    background-color:lightgray;
+    padding:1rem 0;
+}
+
+#footer1{
+    display:flex;
+    justify-content:center;
+    gap:25rem;
+}
+
+#footer-container a{
+    margin:0;
+    color:black;
+}
+
+#footer-container hr{
+    color:white;
+    margin:0.8rem;
+    font-weight:bold;
+}
+
+#footer-payment{
+    text-align:center;
+}
+
+
+
+
+
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="../../static/Auth/register.css">
+    <style>
+        .label-head{
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    {% if not error %}
+    <div class="signup-box">
+        <form action="" method="post">
+            <h1 class="label-head">Sign Up</h1>
+            <label class="label-head">Name</label>
+            <input type="text" name="name" placeholder="Enter your name",required>
+
+            <label class="label-head">Email</label>
+            <input type="text" name="email" placeholder="Enter your Email",required>
+
+            <label class="label-head">Mobile No.</label>
+            <input type="text" name="phone" placeholder="Enter your Personal Mobile no.",required>
+
+            <label class="label-head">Address</label>
+            <input cols="5" name="address" placeholder="Enter your Address",required></textarea>
+
+            <label class="label-head">Password</label>
+            <input type="password" name="password" placeholder="Enter your Password",required>
+            <label class="label-head">Confirm Password</label>
+            <input type="password" name="cpassword" placeholder="Confirm Password",required>
+            <div class="centerDiv">
+                <button id="submitBtn" type="submit" value="submit" name="submit">Register</button>    
+            </div>
+        </form>
+        <p class="para-2 label-head">Already have an account? <a style="color:white;" href="{{url_for('login')}}">Login here</a></p>
+        <p class="label-head">By clicking the sign up button, you agree to our<br>
+         <a href="#" class="label-head">Terms and Condition</a> and <a href="#" class="label-head">Privacy Policy</a>
+        </p>
+    </div>
+    {% else %}
+    <div id="regi-error">
+        <p class="label-head">We're sorry, the page you were looking for isn't found here.{{error}}</p>
+        <a class="label-head" href="{{url_for('register')}}" class="link_404">Go to Register</a>
+    </div>
+    {% endif %}
+</body>
+</html>

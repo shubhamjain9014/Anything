@@ -1,0 +1,83 @@
+2024-05-08 09:41:48,458 - logger_test - INFO - Someone Visiting Home page
+2024-05-08 09:41:58,638 - logger_test - WARNING - wrong credentials while login
+2024-05-08 09:42:13,186 - logger_test - INFO - Anand Visiting Home page
+2024-05-08 09:42:13,513 - logger_test - INFO - Someone Visiting Home page
+2024-05-08 09:42:44,855 - logger_test - INFO - Anand successfully pay and placed order
+2024-05-08 09:43:07,354 - logger_test - WARNING - Admin want to modify product details
+2024-05-08 09:43:10,946 - logger_test - INFO - Admin succesfully modify product
+2024-05-08 09:43:13,891 - logger_test - WARNING - Admin removed product
+2024-05-08 09:43:18,525 - logger_test - WARNING - Admin want to add product
+2024-05-08 09:43:29,829 - logger_test - INFO - Admin succesfully add product
+2024-05-08 09:43:37,088 - logger_test - INFO - Admin want to change order details
+2024-05-08 09:43:48,714 - logger_test - INFO - Admin succesfully changed order details
+2024-05-08 09:44:06,636 - logger_test - WARNING - user logout successfully
+2024-05-08 09:46:20,941 - logger_test - WARNING - user logout successfully
+2024-05-08 09:46:41,212 - logger_test - INFO - Anand Visiting Home page
+2024-05-08 09:46:41,572 - logger_test - INFO - Someone Visiting Home page
+2024-05-08 09:46:58,937 - logger_test - INFO - Admin want to change order details
+2024-05-08 09:47:05,912 - logger_test - WARNING - Admin want to modify product details
+2024-05-08 09:47:33,854 - logger_test - WARNING - Admin want to modify product details
+2024-05-08 09:47:59,312 - logger_test - WARNING - Admin want to modify product details
+2024-05-08 09:48:29,479 - logger_test - INFO - Admin want to change order details
+2024-05-08 09:49:48,746 - logger_test - INFO - Admin want to change order details
+2024-05-08 10:13:28,748 - logger_test - INFO - Someone Visiting Home page
+2024-05-08 10:13:32,283 - logger_test - WARNING - user logout successfully
+2024-05-08 10:15:51,568 - logger_test - INFO - Anand Visiting Home page
+2024-05-08 10:15:51,837 - logger_test - INFO - Someone Visiting Home page
+2024-05-08 10:16:19,083 - logger_test - INFO - Anand successfully pay and placed order
+2024-05-08 10:16:33,685 - logger_test - INFO - Admin want to change order details
+2024-05-08 10:16:49,402 - logger_test - INFO - Admin succesfully changed order details
+2024-05-08 10:16:55,367 - logger_test - INFO - 1000000 visiting order details
+2024-05-08 10:26:55,844 - logger_test - INFO - Someone Visiting Home page
+2024-05-08 10:28:25,523 - logger_test - WARNING - user logout successfully
+2024-05-08 10:42:05,172 - logger_test - INFO - Anand Visiting Home page
+2024-05-08 10:42:05,430 - logger_test - INFO - Someone Visiting Home page
+2024-05-08 10:46:55,406 - logger_test - INFO - Anand successfully pay and placed order
+2024-05-08 10:47:52,183 - logger_test - WARNING - user logout successfully
+2024-05-08 10:48:27,880 - logger_test - INFO - admin login successfully
+2024-05-08 11:12:07,989 - logger_test - INFO - Someone Visiting Home page
+2024-05-08 11:12:24,049 - logger_test - INFO - Anand Visiting Home page
+2024-05-08 11:12:24,366 - logger_test - INFO - Someone Visiting Home page
+2024-05-08 11:12:31,584 - logger_test - INFO -  Visiting Myprofile page
+2024-05-08 11:13:31,276 - logger_test - INFO - Someone Visiting Home page
+2024-05-08 11:14:36,050 - logger_test - INFO - Anand successfully pay and placed order
+2024-05-08 11:21:40,918 - logger_test - WARNING - Admin want to add product
+2024-05-08 11:22:52,771 - logger_test - INFO - Admin succesfully add product
+2024-05-08 11:23:04,380 - logger_test - INFO - Someone Visiting Home page
+2024-05-08 11:35:18,578 - logger_test - INFO - Someone Visiting Home page
+2024-05-08 11:35:27,703 - logger_test - WARNING - user logout successfully
+2024-05-08 11:35:43,235 - logger_test - WARNING - wrong credentials in registration
+2024-05-08 11:36:13,560 - logger_test - INFO - Arka,registered to our website
+2024-05-08 11:36:26,939 - logger_test - WARNING - wrong credentials while login
+2024-05-08 11:36:38,784 - logger_test - INFO - Arka Visiting Home page
+2024-05-08 11:36:39,115 - logger_test - INFO - Someone Visiting Home page
+2024-05-08 11:37:23,146 - logger_test - INFO - Arka successfully pay and placed order
+2024-05-08 11:37:28,418 - logger_test - WARNING - user logout successfully
+2024-05-08 11:37:48,074 - logger_test - INFO - admin login successfully
+2024-05-08 11:44:12,153 - logger_test - INFO - admin login successfully
+2024-05-08 11:44:22,436 - logger_test - WARNING - user logout successfully
+2024-06-01 13:28:38,432 - logger_test - INFO - Someone Visiting Home page
+2024-06-01 13:29:45,200 - logger_test - INFO - Someone Visiting Home page
+2024-06-01 13:30:42,304 - logger_test - INFO - Akchansh Choudhary,registered to our website
+2024-06-01 13:30:53,512 - logger_test - INFO - Akchansh Choudhary Visiting Home page
+2024-06-01 13:30:53,528 - logger_test - INFO - Someone Visiting Home page
+2024-06-01 13:31:47,636 - logger_test - INFO - Akchansh Choudhary successfully pay and placed order
+2024-06-01 13:32:10,454 - logger_test - WARNING - user logout successfully
+2024-06-01 13:32:28,738 - logger_test - INFO - Someone Visiting Home page
+2024-06-01 13:32:52,244 - logger_test - WARNING - wrong credentials while login
+2024-06-01 13:34:12,787 - logger_test - INFO - admin login successfully
+2024-06-01 13:34:52,266 - logger_test - INFO - Admin want to change order details
+2024-06-16 13:03:13,344 - logger_test - INFO - Someone Visiting Home page
+2024-06-16 13:05:00,278 - logger_test - INFO - admin login successfully
+2024-06-16 13:05:09,659 - logger_test - WARNING - Admin want to add product
+2024-06-16 13:05:46,478 - logger_test - INFO - Admin succesfully add product
+2024-06-16 13:05:57,252 - logger_test - WARNING - Admin want to modify product details
+2024-06-16 13:06:02,053 - logger_test - WARNING - Admin removed product
+2024-06-16 13:06:25,041 - logger_test - INFO - Someone Visiting Home page
+2024-06-16 13:06:35,316 - logger_test - WARNING - user logout successfully
+2024-06-16 13:06:51,964 - logger_test - WARNING - wrong credentials while login
+2024-06-16 13:07:02,713 - logger_test - WARNING - wrong credentials while login
+2024-06-16 13:08:11,091 - logger_test - INFO - Mayank Jain,registered to our website
+2024-06-16 13:08:25,385 - logger_test - INFO - Mayank Jain Visiting Home page
+2024-06-16 13:08:25,397 - logger_test - INFO - Someone Visiting Home page
+2024-06-16 13:10:21,044 - logger_test - INFO - Mayank Jain successfully pay and placed order
